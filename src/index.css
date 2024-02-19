@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#2519d5, #53497c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    width: 350px;
+    height: 420px;
+    padding: 30px 30px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 30px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.header .purpose {
+    color: #2519d5;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.header .line {
+    width: 90px;
+    height: 5px;
+    border-radius: 8px;
+    background-color: #2519d5;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.body .input {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    background-color: #e9e9e8;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.body input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    margin-top: 2px;
+    color: #757575;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 450;
+}
+
+.footer a:hover {
+    color: #2519d5;
+}
+
+.footer .login-signup-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.loginsignUpBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2519d5;
+    color: #fff;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.loginsignUpBtn-grey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e9e8;
+    color: rgb(21, 18, 18);
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
 }
